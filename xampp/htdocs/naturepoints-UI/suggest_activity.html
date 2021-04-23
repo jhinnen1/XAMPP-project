@@ -60,15 +60,23 @@
                 <li><a href="login.html">Login</a></li>
               </ul>
             </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="suggest_activity.html">Suggest Activity</a></li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <div id="target">Loading...</div>
+    <script id="template" type="x-tmpl-mustache">
+      Greetings {{ name }}!
+    </script>
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <script src="render.js"></script>
+    <br>  </br>
     
     <br>  </br>
     <div class="container">
-      <form action="http://localhost/naturepoints-ui/php/insert_post.php" method="POST" class="contact">
+      <form action="http://localhost/naturepoints-ui/php/suggest_activity.php" method="POST" class="contact">
         <input name="author" type="hidden" value="1">
         <h2>Suggest Activity</h2>
         <p>Suggest an activity and we'll consider adding it to the points calculator!</p>
