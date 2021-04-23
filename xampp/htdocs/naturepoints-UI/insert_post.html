@@ -65,40 +65,34 @@
         </div>
       </div>
     </nav>
-    <div id="target">Loading...</div>
-    <script id="template" type="x-tmpl-mustache">
-      Greetings {{ name }}!
-    </script>
-    <script src="https://unpkg.com/mustache@latest"></script>
-    <script src="render.js"></script>
+    
     <br>  </br>
     <div class="container">
       <form action="http://localhost/naturepoints-ui/php/insert_post.php" method="POST" class="contact">
+        <input name="author" type="hidden" value="1">
         <h2>Insert Post</h2>
-          
-        <p>
-          <label for="name">
+        <label for="name">
             <span>Title: </span>
           </label>
-          <input required type="text" id="name" name="username">
+          <input name="title" type="text" id="name" name="username">
         </p>
         <p>
-          <label for="mail">
+          <label for="name">
             <span>SEO Title: </span>
           </label>
-          <input required type="email" id="mail" name="usermail">
+          <input name="seo" type="text" id="mail" name="usermail">
         </p>
         <p>
-          <label for="mail">
+          <label for="name">
             <span>Category: </span>
           </label>
-          <input type="phone" id="phone" name="userphone">
+          <input name="category" type="text" id="test" name="userphone">
         </p>
         <p>
-          <label for="Comment">
+          <label for="name">
             <span>Content: </span>
           </label>
-          <textarea name="Comments" id="Comment" rows="5"></textarea>
+          <textarea name="content" id="Comment" rows="5"></textarea>
         </p>
         </section>
         <div>
