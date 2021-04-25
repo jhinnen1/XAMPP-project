@@ -89,6 +89,8 @@ or die('Error connecting to server');
           echo $row['title'].' - '.$row['content'].'<br />';
           }
 
+          mysqli_close($db);
+
           ?>
 
         </div>
